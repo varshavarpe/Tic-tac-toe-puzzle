@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- <p>Hello</p>
+    <p>Welcome to jquery</p>
+    <p>Hello, Welcome to Kolhapur</p>
+    <button>Show all</button> -->
+    <h3 style="display: none;" >function is collection of statement,it perform a 
+        specific task.
+        function is collection of statement,it perform a 
+        specific task.
+    </h3>
+    <button >click me</button>
+
+    <script>
+        $("h3").ready(function(){
+            // $("p").click(function(){
+            //     $(this).hide();
+            // });
+            // $("button").click(function(){
+            //     $("p").toggle(2000, function(){
+            //         alert("toggle success")
+            //     });
+            // });
+            $("button").click(function(){
+                // $("h3").css("color","red") .  fadeIn( 2000);
+                $("h3").css("color","red") .  slideDown( 2000);
+
+            });
+        });
+        
+    </script>
+</body>
+</html>

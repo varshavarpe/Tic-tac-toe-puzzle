@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <button id="show">Show</button>
+    <div id="mydiv"><b> Welcome to jquery</b> </div>
+    <input type="text" id="name"><br>
+    <a href="https://google.com" target="blank" id="link">Google</a>
+
+    <script>
+        $(document).ready(function(){
+            $("#show").click(function(){
+                alert($("#mydiv").text());
+                alert($("#mydiv").html());
+                alert($("#name").val());
+                alert($("#link").attr("target"))
+
+
+            });
+        });
+    </script>
+</body>
+</html>

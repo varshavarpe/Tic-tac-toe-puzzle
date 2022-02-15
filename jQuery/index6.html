@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        .color{
+            color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <button id="show">show</button>
+    <button id="remove">remove</button>
+     <div id="mydiv">Hello world</div>
+     <div id="div" style="color: purple;">Hello </div>
+
+
+    <script>
+        // $(document).ready(function(){
+        //     $("#show").click(function(){
+        //         $("#mydiv").append("<p>Hello kolhapur </p>")
+        //         $("#mydiv").prepend("<p>Hello world</p>")
+        //         $("#mydiv").after("<p>jquery</p>")
+        //         $("#mydiv").before("<p>javascript</p>")
+        //     });
+           
+        // });
+            $(document).ready(function(){
+                $("#show").click(function(){
+                    $("#mydiv").toggleClass("color")
+                    alert($("#div").css("color"))
+
+                });
+                $("#remove").click(function(){
+                    $("#mydiv").removeClass("color")
+                });
+            });
+    </script>
+</body>
+</html>

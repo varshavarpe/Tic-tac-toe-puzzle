@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+        #mydiv1,#mydiv2{
+            background-color: #555;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="stop">stop sliding</button>
+    <div id="mydiv1">click to slide down</div>
+    <div id="mydiv2" style="display: none; padding-top: 10px; padding-bottom: 10px;">Hello world</div>
+
+    <script>
+        $(document).ready(function(){
+            $("#mydiv1").click(function(){
+                $("#mydiv2").slideDown(2000)
+            });
+            $("#stop").click(function(){
+                $("#mydiv2").stop();
+            })
+        });
+    </script>
+</body>
+</html>
